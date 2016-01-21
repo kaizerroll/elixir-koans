@@ -14,7 +14,7 @@ defmodule Koans.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:exfswatch, :logger]]
+    [applications: [:logger]]
   end
 
   # Dependencies can be Hex packages:
@@ -28,8 +28,8 @@ defmodule Koans.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:mix_test_watch, "~> 0.2"},
-      {:exfswatch, "~> 0.1.0", only: :test},
+      {:mix_test_watch, "~> 0.2"}, 
+      # {:fs, "~> 0.9.2"}
     ]
   end
 end
